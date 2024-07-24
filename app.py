@@ -18,12 +18,12 @@ for _, row in cables_gdf.iterrows():
     folium.GeoJson(row.geometry).add_to(m)
 
 # Add landing points to the map
-for _, row in landing_points_gdf.iterrows():
-    folium.Marker(
-        location=[row.geometry.y, row.geometry.x],
-        popup=row['name'],
-        icon=folium.Icon(color='blue', icon='point')
-    ).add_to(m)
+#for _, row in landing_points_gdf.iterrows():
+   # folium.Marker(
+       # location=[row.geometry.y, row.geometry.x],
+       # popup=row['name'],
+      #  icon=folium.Icon(color='blue', icon='point')
+ #   ).add_to(m)
 
 # Display the map in Streamlit
 st.title('Global Cables and Landing Points Map')
