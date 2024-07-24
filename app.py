@@ -4,8 +4,8 @@ import folium
 from streamlit_folium import folium_static
 
 # Load GeoJSON files
-cables_path = 'data/cables.geojson'
-landing_points_path = 'data/landing-points.geojson'
+cables_path = 'cables.geojson'
+landing_points_path = 'landing-points.geojson'
 
 cables_gdf = gpd.read_file(cables_path)
 landing_points_gdf = gpd.read_file(landing_points_path)
