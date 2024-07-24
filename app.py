@@ -22,7 +22,7 @@ for _, row in landing_points_gdf.iterrows():
     folium.Marker(
         location=[row.geometry.y, row.geometry.x],
         popup=row['name'],
-        icon=folium.Icon(color='blue', icon='info-sign')
+        icon=folium.Icon(color='blue', icon='point')
     ).add_to(m)
 
 # Display the map in Streamlit
